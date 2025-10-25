@@ -1,0 +1,165 @@
+{
+  "first": {
+    "name": "Bridges",
+    "score": 4
+  },
+  "second": {
+    "name": "Thomas Shelby",
+    "score": 5
+  },
+  "point_match": 15,
+  "turns": [
+    {
+      "turn": "first",
+      "dice": [
+        6,
+        1
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "8",
+          "to": "7",
+          "captured": false
+        },
+        {
+          "from": "13",
+          "to": "7",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "second",
+      "dice": [
+        6,
+        1
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "8",
+          "to": "7",
+          "captured": false
+        },
+        {
+          "from": "13",
+          "to": "7",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "first",
+      "dice": [
+        3,
+        2
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "23",
+          "to": "21",
+          "captured": false
+        },
+        {
+          "from": "24",
+          "to": "21",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "second",
+      "dice": [
+        4,
+        1
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "13",
+          "to": "9",
+          "captured": false
+        },
+        {
+          "from": "9",
+          "to": "8",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "first",
+      "dice": [
+        1,
+        1
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "6",
+          "to": "5",
+          "captured": false
+        },
+        {
+          "from": "6",
+          "to": "5",
+          "captured": false
+        },
+        {
+          "from": "21",
+          "to": "20",
+          "captured": false
+        },
+        {
+          "from": "21",
+          "to": "20",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "second",
+      "dice": [
+        5,
+        6
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "13",
+          "to": "7",
+          "captured": false
+        },
+        {
+          "from": "6",
+          "to": "1",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "first",
+      "dice": [],
+      "cube_owner": "second",
+      "cube_value": 2,
+      "moves": [],
+      "action": "double"
+    },
+    {
+      "turn": "second",
+      "dice": [],
+      "cube_owner": "second",
+      "cube_value": 2,
+      "moves": [],
+      "action": "drop"
+    }
+  ]
+}

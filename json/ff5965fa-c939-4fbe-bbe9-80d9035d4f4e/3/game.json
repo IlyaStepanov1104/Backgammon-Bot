@@ -1,0 +1,220 @@
+{
+  "first": {
+    "name": "Bridges",
+    "score": 3
+  },
+  "second": {
+    "name": "berkut555",
+    "score": 0
+  },
+  "point_match": 7,
+  "turns": [
+    {
+      "turn": "first",
+      "dice": [
+        6,
+        5
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "24",
+          "to": "18",
+          "captured": false
+        },
+        {
+          "from": "18",
+          "to": "13",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "second",
+      "dice": [
+        5,
+        2
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "13",
+          "to": "8",
+          "captured": false
+        },
+        {
+          "from": "13",
+          "to": "11",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "first",
+      "dice": [
+        4,
+        5
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "13",
+          "to": "8",
+          "captured": false
+        },
+        {
+          "from": "13",
+          "to": "9",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "second",
+      "dice": [
+        5,
+        5
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "8",
+          "to": "3",
+          "captured": false
+        },
+        {
+          "from": "8",
+          "to": "3",
+          "captured": false
+        },
+        {
+          "from": "6",
+          "to": "1",
+          "captured": true
+        },
+        {
+          "from": "6",
+          "to": "1",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "first",
+      "dice": [
+        4,
+        6
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "Bar",
+          "to": "21",
+          "captured": false
+        },
+        {
+          "from": "21",
+          "to": "15",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "second",
+      "dice": [
+        3,
+        5
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "13",
+          "to": "10",
+          "captured": true
+        },
+        {
+          "from": "11",
+          "to": "6",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "first",
+      "dice": [
+        1,
+        5
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "Bar",
+          "to": "20",
+          "captured": false
+        },
+        {
+          "from": "9",
+          "to": "8",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "second",
+      "dice": [
+        2,
+        1
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "6",
+          "to": "5",
+          "captured": true
+        },
+        {
+          "from": "24",
+          "to": "22",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "first",
+      "dice": [
+        4,
+        3
+      ],
+      "cube_owner": null,
+      "cube_value": 1,
+      "moves": [
+        {
+          "from": "Bar",
+          "to": "21",
+          "captured": false
+        },
+        {
+          "from": "21",
+          "to": "18",
+          "captured": false
+        }
+      ]
+    },
+    {
+      "turn": "second",
+      "dice": [],
+      "cube_owner": "first",
+      "cube_value": 2,
+      "moves": [],
+      "action": "double"
+    }
+  ]
+}
