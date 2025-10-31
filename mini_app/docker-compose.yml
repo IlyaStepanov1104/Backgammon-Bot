@@ -1,16 +1,10 @@
-version: "3.9"
-
 services:
   nextjs:
-    image: node:20-alpine
+    build: .
     container_name: nextjs
-    working_dir: /app
     volumes:
       - ./:/app
       - /app/node_modules
-    command: npm run dev
     env_file: .env
-    environment:
-      - NODE_ENV=production
     ports:
-      - "3000:3000"   # проброс на хост
+      - "3000:3000"
