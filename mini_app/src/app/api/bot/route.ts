@@ -12,8 +12,18 @@ const miniAppUrl = process.env.MINI_APP_URL;
 
 export async function POST(req: NextRequest) {
     const update = await req.json()
+    let chat_id;
 
-    const chat_id = update.message ? update.message.chat.id : update.callback_query.message.chat.id;
+    if (update.message) {
+        chat_id = update.message.chat.id;
+    } else if (update.callback_query) {
+        chat_id = update.callback_query.message.chat.id;
+    }
+
+    if (!chat_id) {
+        // Если нет chat_id, просто возвращаем ошибку
+        return NextResponse.json({ ok: false, error: 'No chat_id found' });
+    }
 
     const client = new TelegramBotAPI()
 
