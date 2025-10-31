@@ -1,20 +1,23 @@
-# Используем официальный Python образ
-FROM python:3.11-slim
+# Используем официальный Node.js образ для Next.js приложения
+FROM node:18-alpine
 
-# Устанавливаем рабочую директорию внутри контейнера
+# Устанавливаем рабочую директорию
 WORKDIR /app
 
-# Копируем файлы проекта в контейнер
-COPY . /app
+# Копируем package.json и package-lock.json
+COPY mini_app/package*.json ./mini_app/
 
-# Устанавливаем зависимости (предполагается, что у тебя есть requirements.txt)
-RUN pip install --no-cache-dir -r requirements.txt
+# Устанавливаем зависимости
+RUN cd mini_app && npm install
 
-# Создаем папки для загрузок и изображений, чтобы бот мог их использовать
-RUN mkdir -p uploaded images
+# Копируем все файлы проекта
+COPY . .
 
-# Указываем переменную окружения с токеном, если хочешь передавать в Docker run
-# ENV BOT_TOKEN=your_bot_token_here
+# Создаем необходимые директории
+RUN mkdir -p /app/json
 
-# Запускаем бота
-CMD ["python", "bot.py"]
+# Открываем порт для Next.js
+EXPOSE 3000
+
+# Запускаем приложение в dev режиме
+CMD ["sh", "-c", "cd mini_app && npm run dev"]
