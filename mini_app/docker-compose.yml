@@ -6,7 +6,7 @@ services:
     container_name: nextjs
     working_dir: /app
     volumes:
-      - ./nextjs:/app
+      - ./:/app
       - /app/node_modules
     command: npm run dev
     env_file: .env
