@@ -10,6 +10,7 @@ export async function POST(req: NextRequest) {
     }
 
     const browser = await puppeteer.launch({
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || '/usr/bin/chromium',
         args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
 
