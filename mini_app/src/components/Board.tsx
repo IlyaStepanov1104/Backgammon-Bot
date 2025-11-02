@@ -142,7 +142,7 @@ export default function Board({gameData, setIsGameFinished, chatId}: IBoardProps
             }
         }
 
-        setTimeout(() => setIsAnimating(false), (maxDelay + 1.5)*1000);
+        setTimeout(() => setIsAnimating(false), (maxDelay + 1)*1000);
 
         // Обновляем состояние
         setCheckers(newCheckers);

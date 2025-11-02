@@ -12,7 +12,6 @@ const miniAppUrl = process.env.MINI_APP_URL;
 
 export async function POST(req: NextRequest) {
     const update = await req.json()
-    console.log("%c 1 --> Line: 15||route.ts\n update: ","color:#f0f;", update);
     let chat_id;
 
     if (update.message) {
@@ -30,7 +29,7 @@ export async function POST(req: NextRequest) {
 
     if (update.message?.text === '/start') {
         await client.sendMessage(
-            {chat_id: update.message.chat.id, text: 'Привет! Отправь файл с логами игры в короткие нарды.'}
+            {chat_id: update.message.chat.id, text: 'Отправьте протокол с игрой в короткие нарды.'}
         )
         return NextResponse.json({ok: true})
     }
