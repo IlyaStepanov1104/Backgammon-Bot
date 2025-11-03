@@ -29,7 +29,6 @@ export async function POST(req: NextRequest) {
     await bot.sendPhoto({
         chat_id,
         photo: Buffer.from(fileBytes),
-        caption: 'Вот текущая позиция на доске 🎲',
     });
 
     return new Response(JSON.stringify({ ok: true }));

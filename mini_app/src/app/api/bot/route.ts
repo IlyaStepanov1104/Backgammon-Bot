@@ -73,8 +73,6 @@ export async function POST(req: NextRequest) {
         const chat_id = update.callback_query.message.chat.id;
         const data = update.callback_query.data; // например: choose_{dir}_first
         const dirName = randomUUID()
-        const uploadDir = path.join('', dirName)
-        mkdirSync(uploadDir, {recursive: true})
 
         const [_, filePath, side] = data.split('_'); // ["choose", "{dir}", "first|second"]
 
