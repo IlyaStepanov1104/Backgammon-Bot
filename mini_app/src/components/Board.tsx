@@ -47,6 +47,7 @@ export default function Board({gameData, setIsGameFinished, chatId}: IBoardProps
                     "second": data?.second,
                     "point_match": data?.point_match,
                     currentTurn: data?.turns[currentTurn],
+                    dice: nextTurn?.dice.length ? nextTurn.dice : [0, 0],
                 },
                 chat_id: chatId,
             }),
